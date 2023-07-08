@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: #F1EBF9;
+}
+.reload {
+  background-color: #D9C3EC;
+  border: none;
+  color: #6c276e;
+  padding: 8px 0px;
+  font-size: 19px;
+  width:100%;
+}
+.reload:hover {
+  background-color:aquamarine;
+}
+ 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.container h1 { 
+    letter-spacing: 1px;
+    text-align: center;
+}
+.container pre { 
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ 
+.subject {
+    width:auto;
+    font-size: 20px;
+    padding: 12px 20px;
+}
+div{
+  border-radius: 10px;
+  background-image: url("./img/square2.JPG");
+  padding: 20px;
+}
+
+.card-header{
+        background: #D9C3EC;
+        border-radius: 5px;
+        padding: 15px;
+}
+
+h1{
+    background: #D9C3EC;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.btn {
+    background-color: #ACE5BB;
+    border: 1px solid white;
+    color: black;
+    padding: 8px 0px;
+    font-size: 19px;
+    width:100%;
+  }
+  .btn a:hover {
+    background-color:aquamarine;
+  }
+  .btn a{
+    text-decoration: none;
+    color:#6c276e;
+  }

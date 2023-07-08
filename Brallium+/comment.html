@@ -1,0 +1,40 @@
+<html>
+    <title>Brallium宝贝评价</title>
+<head>
+  <link rel="stylesheet" href="stylefeed.css"> 
+</head>
+    <body>
+    <div class="container">
+    <h1>Brallium宝贝评价</h1>
+
+  <form id="entryForm" class="card">
+    <div class="card-body">
+      <div class="form-group">
+        <label for="昵称">你的昵称</label>
+        <input type="text" class="form-control" name="昵称" required>
+      </div>
+      <div class="form-group">
+        <label for="评论">说说你的感受~</label>
+    ​<textarea class="subject" class="form-control" name="评论" style="height: 85px;width: -webkit-fill-available;" required></textarea>
+      </div>
+      <div>
+      <button class="reload" onclick="location.reload();">添加评论</button>
+      <button class="btn"><a href="purchase.html">返回购买页</a></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div style="visibility: hidden;"></div>
+<div class="card mt-4">
+    <div class="card-header">
+      <b>宝贝评论区</b>
+    </div>
+    <div class="card-body" id="entries">
+    </div>
+  </div>
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Brallium生物胸贴</title>
+    <link rel="stylesheet" href="stylemoney.css">
+    <header>
+        <div class="nav container">
+            <div class="logo">Brallium<b>.</b></div>
+            <ul class="navItems">
+              <li><a href="index.html">主页</a></li>
+              <li><a href="material.html">生物材料介绍</a></li>
+              <li><a href="purchase.html">购买产品</a></li>
+                <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            </ul>
+        </nav>
+    </header>
+</head>
+
+<body><section>
+    <form action="https://sheetdb.io/api/v1/gfbik6kc9mm2g" method="POST" id="sheetdb-form">
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3>目前Brallium只开放线下购买渠道, 我们会将线下活动的时间通过邮件通知你~</h3>
+                  <label for="fname"><i class="fa fa-user"></i> 昵称</label>
+                  <input type="text" id="fname" name="data[firstname]" placeholder="e.g. 吃好喝好">
+                  <label for="email"><i class="fa fa-envelope"></i> 邮件</label>
+                  <input type="text" id="email" name="data[email]" placeholder="Brallium会通过邮件更新活动近况, 不要错过线下时间~">
+                  <label for="city"><i class="fa fa-institution"></i> 城市</label>
+                  <input type="text" id="city" name="data[city]" placeholder="告诉我们你的城市, 说不定可以在那里与你见面！">
+                </div>
+      
+                <div class="col-50">
+                  <h3>关注官方小红书, 了解最新的线下活动近况, 不要错过线下购买机会！</h3>
+                  <img src="img/redbook.jpg" alt="pay">
+
+                </div>
+      
+              </div>
+              <input type="submit" value="已填写+关注>>解锁惊喜" class="btn">
+            </form>
+          </div>
+        </div>
+        <script>
+            var form = document.getElementById("sheetdb-form");
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method:"POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+                
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                window.open("nextpage.html","_blank");
+            });
+        });
+        </script>
+    </section>
+</body>

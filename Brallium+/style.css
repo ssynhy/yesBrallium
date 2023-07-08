@@ -1,0 +1,133 @@
+body{
+  background-color:#ACE5BB;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  color: #6c276e;
+}
+section{
+  background-color:#ACE5BB;
+  margin: 10px;
+  padding: 0;
+  color:#b961ae;
+  min-height: 100vh;
+}
+button{
+  color:#b961ae;
+  background-color:aquamarine;
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+  position: relative;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+button a{
+  text-decoration: none;
+}
+
+.logo{
+  display: flex;
+  font-size: 25px;
+  font-weight: 800;
+  color:aquamarine;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 5px;
+}
+b{
+  font-size: 30px;
+  color: #b961ae;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url("./img/square.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:#ACE5BB;
+}
+.container .content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  min-height: 100vh;
+}
+.container .content h4{
+  font-size: 15px;
+  position: relative;
+  margin-left: 5px;
+  color:#6c276e;
+  font-family: 'Courier New', Courier, monospace;
+}
+.container .content h1{
+  font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow-x: auto;
+  display: inline-block;
+}
+.container .content h3{
+  font-size: 15px;
+  position: relative;
+  margin-left: 5px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #6c276e;
+}
+
+.container .content h2{
+  font-size: 18px;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #6c276e;
+}
+
+.container .content h1{
+  font-size: 25px;
+}
+
+@media (max-width: 1080px){
+  .nav{
+      padding: 15px;
+  }
+  section{
+      padding: 3rem 0 2rem;
+  }
+  .container{
+      margin:0 auto;
+      width: 90%;
+}
+}
+
+@media (max-width: 480px){
+  .nav{
+      padding: 11px;
+  }
+  .logo{
+      font-size: 1rem;
+  }
+  .container .content h1{
+    font-size: 40px;
+  }
+  .container .content h2{
+    font-size: 30px;
+  }
+  .container .content h3{
+    font-size: 25px;
+  }
+  .container .content h4{
+    font-size: 25px;
+  }
+}
+
